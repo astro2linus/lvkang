@@ -2,7 +2,7 @@
 	<div class="5grid-layout">
 		<div class="row">
 			<div id="banner" class="12u">
-				<div class="container"><%= link_to image_tag("pics04.jpg", alt: "绿康"), '#' %></a></div>
+				<div class="container"><%= link_to image_tag("pics04.jpg", alt: "绿康"), '#' %></div>
 			</div>
 		</div>
 	</div>
@@ -65,14 +65,14 @@
 							<li class="first">
 								<p class="date"><a href="#">软枣切片</a></p>
 								<p>
-									<a href="/gallery"><img width="280" src="/assets/rz01.jpg" alt=""></a>
+									<%= link_to image_tag("rz01.jpg", alt: "", width: "280" ), "/gallery" %>
 								</p>
 								
 							</li>
 							<li>
 								<p class="date"><a href="#">组培苗</a></p>
 								<p>
-									<a href="/gallery"><img width="280" src="/assets/rz02.jpg" alt=""></a>
+									<%= link_to image_tag("rz02.jpg", alt: "", width: "280" ), "/gallery" %>
 								</p>
 							</li>
 						</ul>
