@@ -9,5 +9,11 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require 5grid/core.css
+ *= require 5grid/core-desktop.css
+ *= require 5grid/core-1200px.css
+ *= require 5grid/core-noscript.css
+ *= require style.css
  *= require_tree .
+
  */

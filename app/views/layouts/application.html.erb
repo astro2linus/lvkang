@@ -1,14 +1,88 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <title>Lvkang</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<title>本溪绿康生态农业有限公司</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<%= stylesheet_link_tag    "application", media: "all",
+    "data-turbolinks-track" => true %>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<%= csrf_meta_tags %>
 
-<%= yield %>
+<!--[if IE 9]><link rel="stylesheet" href="css/style-ie9.css" /><![endif]-->
+</head>
+<body class="homepage">
+<div id="header-wrapper">
+	<header id="header">
+		<div class="5grid-layout">
+			<div class="row">
+				<div class="12u" id="logo"> <!-- Logo -->
+					<h1><a href="#" class="mobileUI-site-name">本溪绿康生态农业有限公司</a></h1>
+				</div>
+			</div>
+		</div>
+		<div class="5grid-layout">
+			<div class="row">
+				<div class="12u" id="menu">
+					<nav class="mobileUI-site-nav">
+						<ul>
+							<%= nav_link "首页", "/" %>
+							<li><a href="/home#page">绿康公司</a></li>
+							<%= nav_link "产品展示", "/gallery" %>
+							<%= nav_link "营养桂冠", "/nutrition" %>
+							<li><a href="#contact">联系我们</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+</div>
+<div id="wrapper">
+	<%= yield %>
+</div>
+
+<div id="footer-wrapper">
+	<div class="5grid-layout">
+		<div class="row" id="footer-content">
+			<div class="4u" id="copyright">
+				<section>
+					<h2>版权所有</h2>
+					<p>&copy;本溪绿康生态农业有限公司</p>
+					<p>&nbsp;</p>
+					<p>ICP备案编号：辽ICP备13011243号</p>
+					<p>&nbsp;</p>
+					<p>设计：Pianovelty</p>
+				</section>
+			</div>
+			<div class="4u" id="links">
+				<section>
+					<h2>资源链接</h2>
+					<p><a href="http://baike.baidu.com/link?url=DtQZBBrnfZ9EgKH6jTphS48PrLwbTibmHJT80U90XQjr07j2NA_GKSlLxy16N6qM">软枣猕猴桃 - 百度百科</a> </p>
+					<p>&nbsp;</p>
+					<p>
+						<a href="http://zh.wikipedia.org/wiki/%E8%BD%AF%E6%9E%A3%E7%8C%95%E7%8C%B4%E6%A1%83">软枣猕猴桃 － 维基百科</a>
+					</p>
+				</section>
+			</div>
+			<div class="4u" id="contact">
+				<section>
+					<h2>联系方式</h2>
+					<p><strong>联系人</strong>: 高先生</p>
+					<p><strong>电话</strong>: 18341485999</p>
+					<p><strong>Email</strong>: bxlk0414@sina.com</p>
+					<p>&nbsp;</p>
+					<p><strong>本溪绿康生态农业有限公司</strong></p>
+					<p>本溪满族自治县东营坊乡红土甸村红土四组</p>
+					<p>本溪, 辽宁省 117000</p>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+</div>
 
 </body>
 </html>
